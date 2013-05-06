@@ -1,0 +1,15 @@
+com.esperhelper.event.score;
+
+com.esperhelper.event.score.AllScoresListener :=
+SELECT
+'FirstEPL' as a_label,							
+avg( score ) AS avgScore 
+FROM
+ScoreEvent.win:length(1);
+
+com.esperhelper.event.score.AllScoresListener :=
+SELECT
+'SecondEPL' as a_label,
+avg( score ) AS avgScore 
+FROM
+ScoreEvent.win:length(1);
